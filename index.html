@@ -24,21 +24,25 @@
       <header class="page-header">
         <h1>Guess the Number!</h1>
       </header>
-      <div id="wrapper">
+      <div class="wrapper">
 
         <ul id="things">
-          <li><input type="text" class="rounded" id="playersGuess" placeholder="Pick a number from 1-100"></input></li>
+          <li><input type="text" class="rounded" name="playersGuess" id="playersGuess" placeholder="Pick a number from 1-100"></input></li>
           <li>
             <div class="btn-group">
               <ul id="buttons">
-                <li><button class="btn btn-success btn-block">Guess this</button> </li>
-                <li><button class="btn btn-success btn-block">Start over</button></li>
-                <li><button class="btn btn-success btn-block">Give me a hint</button></li>
+                <li><button id="guessthis" class="btn btn-success btn-block">Guess this</button> </li>
+                <li><button id="startover" class="btn btn-success btn-block">Start over</button></li>
+                <li><button id="hint" class="btn btn-success btn-block">Give me a hint</button></li>
+                <li><button id="showhistory" class="btn btn-success btn-block"><span id="show">Show</span> history</button></li>
               </ul>
             </div>
           </li>
           <li>
-            <p id="guessMessage">5 Guesses Remaining</p>
+            <p id="guessMessage"><span id='guessRemain'>5</span> Guess<span id='plural'>es</span> Remaining</p>
+            <p id="someText" class="othertext"></p>
+            <div id="history" class="othertext"></div>
+            <p id="smallHint" class="othertext"></p>
           </li>
         </ul>
 
@@ -57,5 +61,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </body>
 </html>

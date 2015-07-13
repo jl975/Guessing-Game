@@ -7,26 +7,35 @@ li {
 	list-style: none;
 }
 
-#wrapper {
+.wrapper {
   float: center;
   margin: auto;
   padding: 0 5%;
   max-width: 500px;
-  border: 1px solid #889988;
+  border: 1px solid #888888;
+  
+
   background: -webkit-linear-gradient(
-    174deg, rgba(255,255,255,1), rgba(0,255,60,0.2)  
+    174deg, rgba(255,255,255,1), rgba(0,255,60,0)  
   );
   background: -o-linear-gradient(
-    174deg, rgba(255,255,255,1), rgba(0,255,60,0.2)  
+    174deg, rgba(255,255,255,1), rgba(0,255,60,0)  
   );
   background: -moz-linear-gradient(
-    174deg, rgba(255,255,255,1), rgba(0,255,60,0.2)  
+    174deg, rgba(255,255,255,1), rgba(0,255,60,0)  
   );
   background: linear-gradient(
-    174deg, rgba(255,255,255,1), rgba(0,255,60,0.2)  
+    174deg, rgba(255,255,255,1), rgba(0,255,60,0)  
   );
+  background-color: rgba(60,255,60,0.2);
+  transition: background-color 0.5s ease;
+
 }
 
+/*.wrapper:hover{
+  background-color: rgba(255,60,60,0.2);
+}
+*/
 
 
 
@@ -41,7 +50,7 @@ header h1 {
 #things {
   width: 100%;
   margin: 0 0;
-  padding: 15px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -50,18 +59,21 @@ header h1 {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  margin-top: 10px;
   background: -webkit-linear-gradient(
-    174deg, #eaffea, #f0fff0
+    174deg, rgba(255,255,255,0), rgba(255,255,255,0.8)
   );
   background: -o-linear-gradient(
-    174deg, #eaffea, #f0fff0
+    174deg, rgba(255,255,255,0), rgba(255,255,255,0.8)
   );
   background: -moz-linear-gradient(
-    174deg, #eaffea, #f0fff0
+    174deg, rgba(255,255,255,0), rgba(255,255,255,0.8)
   );
   background: linear-gradient(
-    174deg, #eaffea, #f0fff0
+    174deg, rgba(255,255,255,0), rgba(255,255,255,0.8)
   );
+  background-color: rgba(234,255,234,1);
+  transition: background-color 0.5s ease;
 }
 
 #things input.rounded:focus {
@@ -92,27 +104,48 @@ header h1 {
 
 /* spamming gradients because I don't know the first thing about good minimalistic design */
 
-#buttons li button {
+#buttons li .btn-block{
   background: -webkit-linear-gradient(
-    174deg, rgba(255,255,255,0), rgba(70,230,80,0.6), rgba(40,180,110,0.6)
+    174deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(0,0,0,0.2)
   );
   background: -o-linear-gradient(
-    174deg, rgba(255,255,255,0), rgba(70,230,80,0.6), rgba(40,180,110,0.6)
+    174deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(0,0,0,0.2)
   );
   background: -moz-linear-gradient(
-    174deg, rgba(255,255,255,0), rgba(70,230,80,0.6), rgba(40,180,110,0.6)
+    174deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(0,0,0,0.2)
   );
   background: linear-gradient(
-    174deg, rgba(255,255,255,0), rgba(70,230,80,0.6), rgba(40,180,110,0.6)
+    174deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2), rgba(0,0,0,0.2)
   );
   color: #006d22;
+  background-color: rgba(80,230,80,0.6);
+  transition: background 500ms ease-out;
 }
+/*#buttons li .btn-block:hover {
+  background-color: rgba(230,80,80,0.8);
+}*/
+
 
 #guessMessage {
-  margin: 5px;
   font-size: 1.5em;
   font-weight: 800;
+  margin-top: 7px;
 }
 
+#someText {
+  margin: 10px;
+}
 
+#smallHint {
+  margin: 10px 0 -5px;
+  padding: 2px 0 0;
+  font-size: 0.7em;
+}
+
+.history {
+  margin: 0;
+}
+#history {
+  margin: 5px;
+}
 
