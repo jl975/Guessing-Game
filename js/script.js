@@ -20,6 +20,9 @@ $(document).ready(function() {
 	var guesses = [];
 	updateNumTimes(START_GUESSES);
 
+	$('.container').hide();
+	$('.container').fadeIn(500);
+
 	$('#guessthis').on('click', function() {
 		guessThis();
 	});
@@ -45,7 +48,6 @@ $(document).ready(function() {
 			display("You are correct!");
 		}
 		if (numTimes <= 0) {
-			//$('.wrapper').addClass('defeat1');
 			grayscale($('.wrapper'),[255,255,255,1], values.wrapperRGB);
 			grayscale($('#things input.rounded'),values.inputRGB1, values.inputRGB2, undefined, values.inputRGBb);
 			grayscale($('.btn-block'),[255,255,255,0], values.buttonRGB1, values.buttonRGB2, values.buttonRGBb, values.buttonRGBt);
